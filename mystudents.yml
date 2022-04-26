@@ -1,0 +1,13 @@
+---
+mystudents:
+ - name: anil
+   phno: 88888
+   address: hyd
+
+ - name: suresh
+   phno: 77777
+   address: ban
+
+ - name: ramesh
+   phno: 99999
+   address: che

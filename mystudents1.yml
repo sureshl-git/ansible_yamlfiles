@@ -1,0 +1,10 @@
+---
+mystudents:
+- name: anil
+  phno: 88888
+  address:
+    - doorno: 345
+    - streetno: 2nd
+    - place: hyd
+    - pincode: 500001
+    
