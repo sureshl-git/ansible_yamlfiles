@@ -1,0 +1,15 @@
+---
+hosts: mywebservers
+become: yes
+tasks:
+- name: install openjdk on ubuntu
+  apt:
+   name: "{{installjavaonubuntu}}"
+   state: present
+  when: ansible_os_family =="Debian"
+
+- name: install openjdk on redhat
+  yum:
+   name: "{{installjavaonredhat}}"
+   state: present
+  when: ansible_os_family =="RedHat"
