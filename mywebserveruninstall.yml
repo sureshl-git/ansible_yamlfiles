@@ -1,5 +1,5 @@
 ---
-- hosts: mywebservers
+- hosts: all
   become: yes
   tasks:
   - name: i want to uninstall webserver on ansible ubuntu nodes
