@@ -1,0 +1,17 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: i want to uninstall webserver on ansible ubuntu nodes
+    apt:
+     name: apache2
+     state: absent
+    when: ansible_os_family =="Debian"
+
+  - name: i want to uninstall webserver on only ansible redhat nodes
+    yum:
+     name: httpd
+     state: absent
+    when: ansible_os_family =="RedHat" 
+
+  
