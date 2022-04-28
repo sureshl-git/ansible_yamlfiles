@@ -10,4 +10,4 @@
   - name: i want to uninstall webserver on ansible redhat nodes
     yum:
      name: httpd
-     state: absent  
+     state: absent
