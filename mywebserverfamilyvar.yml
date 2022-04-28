@@ -20,14 +20,8 @@
      state: present
     when: ansible_os_family =="RedHat" 
 
-  - name: i want to start webserver service on only ansible redhat nodes
-    service:
-     name: "{{mywebpackageforredhat}}"
-     state: started
-    when: ansible_os_family =="RedHat"  
-
   - name: i want to enable httpd service on redhat nodes on startup
     service:
-     name: "{{mywebpackageforredhat}}" 
+     name: "{{mywebpackageforredhat}}"
      enabled: yes
     when: ansible_os_family =="RedHat"
