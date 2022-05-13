@@ -1,0 +1,14 @@
+---
+- hosts: mywebservers
+  become: yes
+  vars:
+    myvar1: git
+    myvar2: tree
+    myvar3: wget
+  tasks:
+  - name: install git
+    apt:
+     name: "{{myvar1}}"
+  - name: i want to display myvar1
+    debug:
+     msg: "{{myvar1}}"
