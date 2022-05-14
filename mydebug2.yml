@@ -1,5 +1,5 @@
 ---
-- hosts: 172.31.4.2
+- hosts: 172.31.22.2
   become: yes
   tasks:
   - name: i want to execute linux command directly by playbook
@@ -20,4 +20,4 @@
     apt:
      name: git
      state: present
-    when: myresult.stderr !="" 
+    when: myresult.stderr !=""
