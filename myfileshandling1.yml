@@ -1,0 +1,12 @@
+---
+- hosts: 172.31.22.2
+  become: yes
+  tasks:
+  - name: i want to install webserver on ansible node
+    apt:
+      name: apache2
+      state: present
+  - name: i want to copy myindex file into ansible node side
+    template:
+     src: myindexstat.j2
+     dest: /var/www/html/index.html
