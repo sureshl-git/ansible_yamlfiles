@@ -7,3 +7,4 @@
      url: https://get.jenkins.io/war-stable/2.332.3/jenkins.war
      dest: /home/suresh/jenkins.war
      force_basic_auth: yes
+     
