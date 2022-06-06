@@ -1,9 +1,6 @@
 ---
-- hosts: 172.31.22.2
-  become: yes
-  tasks:
   - name: create a file on node side
     file:
-     path: /home/suresh/testfile
+     path: /home/suresh/testfile1
      state: touch
      

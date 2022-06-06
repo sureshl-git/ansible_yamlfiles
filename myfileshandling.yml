@@ -3,10 +3,3 @@
   become: yes
   tasks:
   - include_tasks: myfile.yml
-
-myfile.yml
----
-  - name: create a file on node side
-    file:
-     path: /home/suresh/testfile1
-     state: touch         
