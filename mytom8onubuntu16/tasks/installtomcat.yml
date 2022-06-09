@@ -12,5 +12,5 @@
 
 - name: Extract tar file into /opt/tomcat directory
   command:
-    cmd: sudo tar xzvf /home/suresh/apache-tomcat-8.5.5.tar.gz -C /opt/tomcat --strip-components=1
+    cmd: tar xzvf /home/suresh/apache-tomcat-8.5.5.tar.gz -C /opt/tomcat --strip-components=1
     creates: /opt/tomcat/LICENSE
