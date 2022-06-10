@@ -1,2 +1,5 @@
 ---
 # vars file for mytom8onubuntu16
+
+mysqlusername: suresh
+mysqlpassword: suresh
